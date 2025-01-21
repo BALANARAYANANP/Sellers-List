@@ -17,7 +17,7 @@ const App = () => {
           {/* If not logged in, show the Login page */}
           <Route path="/" element={!isLoggedIn ? <Login onLogin={handleLogin} /> : <Seller />} />
           {/* Show Seller page if logged in */}
-          <Route path="/seller" element={isLoggedIn ? <Seller /> : <Login onLogin={handleLogin} />} />
+          <Route path="/seller" element={ <Seller  />} />
         </Routes>
       </div>
     </Router>
